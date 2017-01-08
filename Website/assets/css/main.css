@@ -1970,6 +1970,7 @@ section #animalhead{
 	box-shadow: none;
     background-color:black;
     color:white;
+    cursor:pointer;
 }
 #chatsubmit{
     position:relative;

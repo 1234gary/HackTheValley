@@ -16,6 +16,21 @@ $(document).ready(function(){
     $("#but5").click(function(){
         $("#panel5").toggle();
     });
+    
+    $("#submitbutton").click(function(){
+        var comment = $('#textarea').val();
+        $('#posts').prepend('<button class="accord" id = "but6">' + comment + '</button><div class="panel" id = "panel6"><div class = "comment2"><textarea class = "comments" rows="2" cols="56" name="aboutyou" placeholder=" Provide a response!"></textarea><input type="submit" value="Submit" id = "submitbutton2"> </div></div>');
+        $("#but6").click(function(){
+        $("#panel6").toggle();
+    });
+   
+    });
+    
+     $("#submitbutton2").click(function(){
+        var comment2 = $('#commenter').val();
+        $("#rando").append('<div class = "comment">' + comment2 + '</div>');
+    });    
+    
     $("#chatsubmit").click(function(){
         var value = $('#msg').val();
         var check = 1;
