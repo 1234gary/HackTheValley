@@ -1,4 +1,6 @@
+
 $(document).ready(function(){
+    var i = 1;
     $("#but1").click(function(){
         $("#panel1").toggle();
     });
@@ -13,5 +15,23 @@ $(document).ready(function(){
     });
     $("#but5").click(function(){
         $("#panel5").toggle();
+    });
+    $("#chatsubmit").click(function(){
+        if (i == 1){
+            $("#message1").css("color", "black");
+            
+            setTimeout(function(){
+  $("#message2").css("color", "black");
+}, 1000);
+            $("#myform")[0].reset();
+            i+=1;
+        }
+        else{
+            $("#message3").css("color", "black");
+            setTimeout(function(){
+  $("#message4").css("color", "black");
+}, 1000);
+            $("#myform")[0].reset();
+        }
     });
 });
