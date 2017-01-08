@@ -1221,20 +1221,7 @@ section > :last-child,
 
 /* Footer */
 
-#footer .quote-list li {
-    border-top: solid 1px #e0e4e6;
-    border-bottom: solid 1px #b5bec3;
-}
 
-#footer .link-list li {
-    border-top: solid 1px #e0e4e6;
-    border-bottom: solid 1px #b5bec3;
-}
-
-#footer .check-list li {
-    border-top: solid 1px #e0e4e6;
-    border-bottom: solid 1px #b5bec3;
-}
 
 /* Desktop */
 
@@ -1257,10 +1244,13 @@ section > :last-child,
         border-bottom: solid 1px #272d30;
         box-shadow: inset 0px -1px 0px 0px #51575a;
         text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.75);
+        width:110%;
+        z-index:1;
     }
 
     .subpage #header-wrapper {
-        height: 105px;
+        height: 50px;
+        position:fixed;
     }
 
     #features-wrapper {
@@ -1276,15 +1266,12 @@ section > :last-child,
         padding: 20px 0 45px 0;
     }
 
-    #footer-wrapper {
-        padding: 45px 0 45px 0;
-        text-shadow: 1px 1px 1px white;
-    }
+
 
     /* Header */
 
     #header {
-        min-height: 155px;
+        min-height: 140px;
         position: relative;
     }
 
@@ -1292,7 +1279,7 @@ section > :last-child,
         position: absolute;
         left: 0;
         bottom: 35px;
-        font-size: 2.75em;
+        font-size: 35px;
     }
 
     #header h1 a {
@@ -1368,6 +1355,8 @@ section > :last-child,
         padding: 40px 30px 45px 30px;
         box-shadow: 2px 2px 2px 1px rgba(128, 128, 128, 0.1);
         margin: 0 0 10% 0;
+        position:relative;
+        top:50px;
     }
 
     #content h2{ 
@@ -1394,28 +1383,13 @@ section > :last-child,
 
     /* Footer */
 
-    #footer {
-        color: #546b76;
-        text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5);
-    }
-
-    #footer h2 {
-        font-size: 1.25em;
-        color: #212f35;
-        margin: 0 0 1em 0;
-    }
-
-    #footer a {
-        color: #546b76;
-    }
-
     /* Copyright */
 
     #copyright {
         border-top: solid 1px #b5bec3;
         box-shadow: inset 0px 1px 0px 0px #e0e4e7;
         text-align: center;
-        padding: 45px 0 80px 0;
+        padding: 0px 0 0px 0;
         color: #8d9ca3;
         text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5);
     }
@@ -1560,11 +1534,7 @@ section > :last-child,
         padding-top: 44px;
     }
 
-    #footer-wrapper {
-        padding: 40px 15px 15px 15px;
-        text-shadow: 1px 1px 1px white;
-    }
-
+  
     /* Header */
 
     #header {
@@ -1654,7 +1624,7 @@ section > :last-child,
 
     /* Footer */
 
-    #footer {
+    /*#footer {
         color: #546b76;
         text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5);
     }
@@ -1676,7 +1646,7 @@ section > :last-child,
     #footer .link-list {
         margin: 0 0 30px 0 !important;
     }
-
+*/
     /* Copyright */
 
     #copyright {
@@ -1855,7 +1825,7 @@ section > :last-child,
 
 /* When the input field gets focus, change its width to 100% */
 input[type=text] {
-    width: 580px;
+    width: 590px;
     box-sizing: border-box;
     border: 0px solid #ccc;
     border-radius: 4px;
@@ -1867,8 +1837,8 @@ input[type=text] {
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
     position:relative;
-    right:-310px;
-    top:25px;
+    right:-240px;
+    top:10px;
 }
 .texttitle{
         position:relative;
@@ -1885,6 +1855,8 @@ button.accord {
     border: none;
     outline: none;
     transition: 0.4s;
+    border-radius:10px;
+    margin: 10px 0 10px 0;
 }
 
 button.accord {
@@ -1915,7 +1887,9 @@ div.panel.show {
 }
 
 #quote{
-    height:40px;
+    position:relative;
+    height:70px;
+    top:20px;
 }
 
 #name{
@@ -1926,4 +1900,43 @@ div.panel.show {
     width:200px;
     position:relative;
         top:-30px;
+    border:1px solid red;
+    margin:0px;
+ 
+}
+
+h2#quoter{
+    position:relative;
+    top:0px;
+}
+section#pic{
+    height:270px;
+}
+#animal{
+    height:0px;
+    position:relative;
+    top:10px;
+}
+#animalid{
+    color:deeppink;
+}
+section #animalhead{
+    
+    height:0px;
+    border:1px solid red;
+}
+#footer{
+    height:50px;
+    position:relative;
+    top: 20px;
+}
+#textarea{
+    width:100%;
+    height:100px;
+    border-radius:10px;
+    position:relative;
+}
+#updates{
+    top:30px;
+    position:relative;
 }
