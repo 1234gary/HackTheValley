@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Let Out</title>
+
+    <environment names="Development">
+        <link rel="stylesheet" href="~/css/main.css" type="text/css" />
+    </environment>
+    <environment names="Staging,Production">
+        <link rel="stylesheet" href="~/css/main.css" type="text/css" />
+    </environment>
+    @Html.ApplicationInsightsJavaScript(TelemetryConfiguration)
+</head>
+<body>
+   
+        @RenderBody()
+        <footer>
+            <p>&copy; 2017 - let out</p>
+        </footer>
+
+    <environment names="Development">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+        <script src="~/js/ui.js"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+        <script src="~/js/ui.js"></script>
+    </environment>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>
